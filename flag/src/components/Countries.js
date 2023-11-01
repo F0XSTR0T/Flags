@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Card from "./Card";
+import Navigation from "./Navigation";
+import Logo from "./Logo";
 
 const Countries = () => {
   const [data, setData] = useState([]);
@@ -16,6 +18,8 @@ const Countries = () => {
 
   return (
     <div className="countries">
+    <Logo />
+    <Navigation />
       <ul className="radio-container">
         <input
           type="range"

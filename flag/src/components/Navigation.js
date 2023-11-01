@@ -16,6 +16,11 @@ const Navigation = () => {
                     </NavLink>  
                 </li>
                 <li>
+                    <NavLink to="/blog" className={(nav) => (nav.isActive ? "nav-active" : "")} exact>
+                        Blog
+                    </NavLink>
+                </li>
+                <li>
                     <NavLink to="/about" className={(nav) => (nav.isActive ? "nav-active" : "")} exact>
                         About
                     </NavLink>
